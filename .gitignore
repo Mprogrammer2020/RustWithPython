@@ -1,0 +1,9 @@
+# Python env
+env/
+
+# Compiled Python bytecode
+*.py[cod]
+
+# Maturin files
+*target/
+*Cargo.lock

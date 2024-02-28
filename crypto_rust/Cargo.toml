@@ -1,0 +1,16 @@
+[package]
+name = "crypto_rust"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "crypto_rust"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = { version = "0.20.2", features = ["extension-module"] }
+binance = { git = "https://github.com/wisespace-io/binance-rs.git" }
+pyo3-asyncio = { version = "0.20", features = ["attributes", "tokio-runtime"] }
+tokio = { version = "1.9", features = ["full"] }
+rust-bybit = "0.2"
